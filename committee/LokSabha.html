@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Committee</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --primary-blue: #5936d9;
+      /* matches college pillars */
+      --secondary-blue: #4A90E2;
+      /* lighter highlight */
+      --accent-gold: #C9A54C;
+      /* from emblem */
+      --neutral-beige: #D9D4C7;
+      /* walls */
+      --light-gray: #F5F5F5;
+      /* section backgrounds */
+      --dark-charcoal: #2C2C2C;
+      /* text/footer */
+    }
+
+    html,
+    body {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  </style>
+</head>
+
+<body class="flex flex-col min-h-screen bg-white text-[var(--dark-charcoal)]">
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full z-20 bg-[#5936d9] text-white shadow-lg">
+    <div class="w-full px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+
+        <!-- Logo -->
+        <a href="/index.html" class="font-bold text-lg">SGSITS-MUN</a>
+
+        <!-- Desktop Links -->
+        <div class="hidden md:flex space-x-6 items-center">
+          <a href="/index.html" class="hover:text-[var(--accent-gold)]">Home</a>
+          <a href="/about.html" class="hover:text-[var(--accent-gold)]">About</a>
+
+          <!-- Committees Dropdown -->
+          <div class="relative">
+            <button id="committee-btn" class="hover:text-[var(--accent-gold)] flex items-center focus:outline-none">
+              Committee <span class="ml-1">▾</span>
+            </button>
+            <div id="committee-menu"
+              class="absolute left-0 mt-2 hidden bg-black text-white rounded-md shadow-lg w-44 z-50">
+              <a href="/committee/LokSabha.html"
+                class="block px-4 py-2 hover:bg-[var(--accent-gold)] hover:text-black">Lok Sabha</a>
+              <a href="/committee/Sochum.html"
+                class="block px-4 py-2 hover:bg-[var(--accent-gold)] hover:text-black">SOCHUM</a>
+              <a href="/committee/Disec.html"
+                class="block px-4 py-2 hover:bg-[var(--accent-gold)] hover:text-black">DISEC</a>
+            </div>
+          </div>
+
+          <a href="/newsletters.html" class="hover:text-[var(--accent-gold)]">Newsletters</a>
+          <a href="/contact.html" class="hover:text-[var(--accent-gold)]">Contact</a>
+          <a href="https://www.instagram.com/sgsits_mun" target="_blank"
+            class="hover:text-[var(--accent-gold)]">Follow us</a>
+        </div>
+
+        <!-- Mobile Hamburger -->
+        <div class="md:hidden flex items-center">
+          <button id="menu-btn" class="focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#5936d9] px-4 pb-4 space-y-2">
+      <a href="/index.html" class="block hover:text-[var(--accent-gold)]">Home</a>
+      <a href="/about.html" class="block hover:text-[var(--accent-gold)]">About</a>
+      <div>
+        <p class="font-semibold">Committees</p>
+        <a href="/committee/LokSabha.html" class="block pl-4 hover:text-[var(--accent-gold)]">Lok Sabha</a>
+        <a href="/committee/Sochum.html" class="block pl-4 hover:text-[var(--accent-gold)]">SOCHUM</a>
+        <a href="/committee/Disec.html" class="block pl-4 hover:text-[var(--accent-gold)]">DISEC</a>
+      </div>
+      <a href="/newsletters.html" class="block hover:text-[var(--accent-gold)]">Newsletters</a>
+      <a href="/contact.html" class="block hover:text-[var(--accent-gold)]">Contact</a>
+      <a href="https://www.instagram.com/sgsits_mun" target="_blank"
+        class="block hover:text-[var(--accent-gold)]">Follow us</a>
+    </div>
+  </nav>
+
+
+  <!-- Hero Section -->
+  <section class="pt-24 pb-12 text-center">
+    <img src="/assets/images/Loksabhalogo.png" alt="LOK SABHA Logo" class="mx-auto w-32 h-32">
+    <h1 class="text-3xl md:text-4xl font-bold mt-6">LOK SABHA</h1>
+    <div class="mt-6 flex justify-center space-x-4">
+      <a href="study-guide.pdf" target="_blank"
+        class="px-6 py-2 bg-[var(--dark-charcoal)] text-white font-semibold rounded-lg hover:bg-[var(--accent-gold)] hover:text-black transition">
+        STUDY GUIDE
+      </a>
+      <a href="allotments.pdf" target="_blank"
+        class="px-6 py-2 bg-[var(--dark-charcoal)] text-white font-semibold rounded-lg hover:bg-[var(--accent-gold)] hover:text-black transition">
+        ALLOTMENTS
+      </a>
+    </div>
+  </section>
+
+  <!-- Chairperson Section -->
+  <section class="py-12 px-6 md:px-20">
+    <h2 class="text-2xl font-bold text-center mb-8">Letter from the Chairperson</h2>
+    <div class="flex items-start gap-6">
+      <!-- Small Image on Left -->
+      <img src="/assets/images/8final.jpg" 
+           alt="Chairperson" 
+           class="w-80 h-auto rounded-lg shadow-lg object-cover">
+
+      <!-- Text Content -->
+      <div>
+        <p class="mb-4">Warmest Greetings Delegates,</p>
+        <p class="mb-4">
+          With ecstatic delight, I am elated to serve as the Chairperson of the LOK SABHA, and welcome you all to SGSITS MUN.
+        </p>
+        <p class="mb-4">
+          I started this glamorous MUN journey as a logistics member in 2022. I still remember my bureau from that MUN which made me head over heels for participating in yet another conference.
+        </p>
+        <p class="mb-4">
+          Honestly, I am a pretty compassionate and humble person, someone you can always count on for any kind of support. I am also a huge movie enthusiast which means I will probably spend my weekend staring at my laptop screen, watching the same Bollywood movie for the 10th time.
+        </p>
+        <p class="mb-4">
+          In addition to that, listening to songs of every genre and having multiple playlists of multiple moods has become an integral part of my life.
+        </p>
+        <p class="mb-4">
+          As the Chair, I believe that young delegates of this conference are thoroughly prepared for the debates and discussions and are all ready to embark on this journey. I look forward to this conference and meeting the future diplomats in the making.
+        </p>
+        <p class="mt-6 font-semibold">Regards,<br>Paridhi Arora<br>Chairperson<br>LOK SABHA</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Committee Description-->
+  <section class="py-12 px-6 md:px-20 bg-[var(--light-gray)]">
+    <h2 class="text-2xl font-bold mb-4 text-green-700">Committee Description</h2>
+    <p>
+      The Lok Sabha, or House of the People, is the lower house of India's bicameral Parliament, playing a crucial role in the country's legislative process. Comprising directly elected representatives from various constituencies across India, the Lok Sabha is responsible for making laws, debating national issues, and overseeing the executive branch of government. It holds significant powers, including the ability to pass budgets and scrutinize government policies. The Lok Sabha operates under a parliamentary system, where the majority party or coalition forms the government, and its members represent the diverse interests of India's vast population.
+    </p>
+  </section>
+
+  <!-- Agenda Description -->
+  <section class="py-12 px-6 md:px-20">
+    <h2 class="text-2xl font-bold mb-4 text-green-700">Agenda Description</h2>
+    <p>
+      "Discussing Electoral Malpractices and Protecting Indian Democracy"
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[var(--dark-charcoal)] text-white text-center p-6">
+    <p>&copy; 2025 SGSITS INDORE | Follow us on
+      <a href="https://www.instagram.com/sgsits_mun?igsh=MTNpYW42NTA1eGtndQ==" target="_blank"
+        class="underline text-[var(--accent-gold)]">Instagram</a>
+    </p>
+    <p class="mt-2 text-sm">Developed by Yashvardhan</p>
+  </footer>
+
+  <!-- Script for Mobile Menu -->
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+
+    // Committee dropdown toggle
+    const committeeBtn = document.getElementById('committee-btn');
+    const committeeMenu = document.getElementById('committee-menu');
+
+    committeeBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      committeeMenu.classList.toggle('hidden');
+    });
+
+    document.addEventListener('click', () => {
+      committeeMenu.classList.add('hidden');
+    });
+  </script>
+</body>
+</html>

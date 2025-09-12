@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SGSITS-MUN</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --primary-blue: #5936d9;
+      --secondary-blue: #4A90E2;
+      --accent-gold: #C9A54C;
+      --neutral-beige: #D9D4C7;
+      --light-gray: #F5F5F5;
+      --dark-charcoal: #2C2C2C;
+    }
+
+    html,
+    body {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  </style>
+</head>
+
+<body class="flex flex-col min-h-screen bg-white text-[var(--dark-charcoal)]">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full z-20 bg-[#5936d9] text-white shadow-lg">
+    <div class="w-full px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+
+        <!-- Logo -->
+        <a href="/index.html" class="font-bold text-lg">SGSITS-MUN</a>
+
+        <!-- Desktop Links -->
+        <div class="hidden md:flex space-x-6 items-center">
+          <a href="/index.html" class="hover:text-[var(--accent-gold)]">Home</a>
+          <a href="/about.html" class="hover:text-[var(--accent-gold)]">About</a>
+
+          <!-- Committees Dropdown -->
+          <div class="relative">
+            <button id="committee-btn" class="hover:text-[var(--accent-gold)] flex items-center focus:outline-none">
+              Committee <span class="ml-1">▾</span>
+            </button>
+            <div id="committee-menu"
+              class="absolute left-0 mt-2 hidden bg-black text-white rounded-md shadow-lg w-44 z-50">
+              <a href="/committee/LokSabha.html"
+                class="block px-4 py-2 hover:bg-[var(--accent-gold)] hover:text-black">Lok Sabha</a>
+              <a href="/committee/Sochum.html"
+                class="block px-4 py-2 hover:bg-[var(--accent-gold)] hover:text-black">SOCHUM</a>
+              <a href="/committee/Disec.html"
+                class="block px-4 py-2 hover:bg-[var(--accent-gold)] hover:text-black">DISEC</a>
+            </div>
+          </div>
+
+          <a href="/newsletters.html" class="hover:text-[var(--accent-gold)]">Newsletters</a>
+          <a href="/contact.html" class="hover:text-[var(--accent-gold)]">Contact</a>
+          <a href="https://www.instagram.com/sgsits_mun" target="_blank"
+            class="hover:text-[var(--accent-gold)]">Follow us</a>
+        </div>
+
+        <!-- Mobile Hamburger -->
+        <div class="md:hidden flex items-center">
+          <button id="menu-btn" class="focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#5936d9] px-4 pb-4 space-y-2">
+      <a href="/index.html" class="block hover:text-[var(--accent-gold)]">Home</a>
+      <a href="/about.html" class="block hover:text-[var(--accent-gold)]">About</a>
+      <div>
+        <p class="font-semibold">Committees</p>
+        <a href="/committee/LokSabha.html" class="block pl-4 hover:text-[var(--accent-gold)]">Lok Sabha</a>
+        <a href="/committee/Sochum.html" class="block pl-4 hover:text-[var(--accent-gold)]">SOCHUM</a>
+        <a href="/committee/Disec.html" class="block pl-4 hover:text-[var(--accent-gold)]">DISEC</a>
+      </div>
+      <a href="/newsletters.html" class="block hover:text-[var(--accent-gold)]">Newsletters</a>
+      <a href="/contact.html" class="block hover:text-[var(--accent-gold)]">Contact</a>
+      <a href="https://www.instagram.com/sgsits_mun" target="_blank"
+        class="block hover:text-[var(--accent-gold)]">Follow us</a>
+    </div>
+  </nav>
+
+  <!-- Main content -->
+  <main class="flex-grow">
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center text-center text-white">
+      <img src="/assets/images/bag1.jpg" alt="UN Image"
+        class="absolute inset-0 w-full h-full object-cover opacity-80">
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+      <div class="relative z-10 px-6">
+        <h1 class="text-4xl md:text-6xl font-bold">SGSITS MUN 2025</h1>
+        <p class="mt-2 text-2xl font-semibold text-[var(--accent-gold)]">DIGIT</p>
+        <p class="text-xl">DEMOCRACY || INNOVATION || GLOBAL || INCLUSION || TECHNOLOGY</p>
+        <div class="mt-6">
+          <a href="/about.html"
+            class="px-6 py-3 bg-[#5936d9] hover:bg-[var(--accent-gold)] text-white hover:text-[var(--dark-charcoal)] rounded-lg font-semibold transition">
+            Learn More
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[var(--light-gray)] py-16 px-6 md:px-20 mt-16">
+      
+      <h2 class="text-3xl font-bold mb-12 text-center text-[var(--primary-blue)]">Meet the Secretariat</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+        <div class="bg-white shadow-lg rounded-xl p-6 text-center border-t-4 border-[var(--primary-blue)]">
+          <img src="/assets/images/Rohan.png" alt="Secretary 1"
+            class="rounded-full mx-auto w-32 h-32 object-cover mb-4">
+          <h3 class="font-semibold text-xl">Rohan Singhal</h3>
+          <p class="text-[var(--primary-blue)]">Secretary General</p>
+          <p class="mt-3 text-sm">"We welcome you to the SGSITS-MUN 2025!"</p>
+        </div>
+        <div class="bg-white shadow-lg rounded-xl p-6 text-center border-t-4 border-[var(--primary-blue)]">
+          <img src="/assets/images/Anya.JPG" alt="Secretary 2"
+            class="rounded-full mx-auto w-32 h-32 object-cover mb-4">
+          <h3 class="font-semibold text-xl">Anya Agrawal</h3>
+          <p class="text-[var(--primary-blue)]">Deputy Secretary</p>
+          <p class="mt-3 text-sm">"Together, we will make this event a success."</p>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-xl p-6 text-center border-t-4 border-[var(--primary-blue)]">
+          <img src="/assets/images/Nikunjagrawal.JPG" alt="Secretary 2"
+            class="rounded-full mx-auto w-32 h-32 object-cover mb-4">
+          <h3 class="font-semibold text-xl">Nikunj Agrawal</h3>
+          <p class="text-[var(--primary-blue)]">USG-Delegate Affairs</p>
+          <p class="mt-3 text-sm">"Ensuring a smooth experience for all delegates."</p>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-xl p-6 text-center border-t-4 border-[var(--primary-blue)]">
+          <img src="/assets/images/Yash.JPG" alt="Secretary 2"
+            class="rounded-full mx-auto w-32 h-32 object-cover mb-4">
+          <h3 class="font-semibold text-xl">Yashvardhan Patel</h3>
+          <p class="text-[var(--primary-blue)]">USG-Tech Affairs and Media</p>
+          <p class="mt-3 text-sm">"Capturing and sharing every moment of the event."</p>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-xl p-6 text-center border-t-4 border-[var(--primary-blue)]">
+          <img src="/assets/images/Alkesh.JPG" alt="Secretary 2"
+            class="rounded-full mx-auto w-32 h-32 object-cover mb-4">
+          <h3 class="font-semibold text-xl">Alkesh Rajput</h3>
+          <p class="text-[var(--primary-blue)]">USG-Logistics</p>
+          <p class="mt-3 text-sm">"Ensuring everything runs smoothly behind the scenes."</p>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-xl p-6 text-center border-t-4 border-[var(--primary-blue)]">
+          <img src="/assets/images/Venky.JPG" alt="Secretary 2"
+            class="rounded-full mx-auto w-32 h-32 object-cover mb-4">
+          <h3 class="font-semibold text-xl">Venkatesh Kumar Patel</h3>
+          <p class="text-[var(--primary-blue)]">USG-Logistics</p>
+          <p class="mt-3 text-sm">"Committed to providing the best logistical support."</p>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-xl p-6 text-center border-t-4 border-[var(--primary-blue)]">
+          <img src="/assets/images/Surya.JPG" alt="Secretary 2"
+            class="rounded-full mx-auto w-32 h-32 object-cover mb-4">
+          <h3 class="font-semibold text-xl">Surya Pratap Singh</h3>
+          <p class="text-[var(--primary-blue)]">USG-Hospitality</p>
+          <p class="mt-3 text-sm">"Making sure our guests feel at home."</p>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-xl p-6 text-center border-t-4 border-[var(--primary-blue)]">
+          <img src="/assets/images/Adarsh.JPG" alt="Secretary 2"
+            class="rounded-full mx-auto w-32 h-32 object-cover mb-4">
+          <h3 class="font-semibold text-xl">Adarsh Patel</h3>
+          <p class="text-[var(--primary-blue)]">Volunteer Head</p>
+          <p class="mt-3 text-sm">"Leading our dedicated team of volunteers."</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[var(--dark-charcoal)] text-white text-center p-6">
+    <p>&copy; 2025 SGSITS INDORE | Follow us on
+      <a href="https://www.instagram.com/sgsits_mun" target="_blank"
+        class="underline text-[var(--accent-gold)]">Instagram</a>
+    </p>
+    <p class="mt-2 text-sm">Developed by Yashvardhan</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Mobile menu toggle
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+
+    // Committee dropdown toggle
+    const committeeBtn = document.getElementById('committee-btn');
+    const committeeMenu = document.getElementById('committee-menu');
+
+    committeeBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      committeeMenu.classList.toggle('hidden');
+    });
+
+    document.addEventListener('click', () => {
+      committeeMenu.classList.add('hidden');
+    });
+  </script>
+
+</body>
+</html>

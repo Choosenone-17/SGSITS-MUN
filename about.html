@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --primary-blue: #5936d9;
+      /* matches college pillars */
+      --secondary-blue: #4A90E2;
+      /* lighter highlight */
+      --accent-gold: #C9A54C;
+      /* from emblem */
+      --neutral-beige: #D9D4C7;
+      /* walls */
+      --light-gray: #F5F5F5;
+      /* section backgrounds */
+      --dark-charcoal: #2C2C2C;
+      /* text/footer */
+    }
+
+    html,
+    body {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  </style>
+</head>
+
+<body class="flex flex-col min-h-screen bg-white text-[var(--dark-charcoal)]">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full z-20 bg-[#5936d9] text-white shadow-lg">
+    <div class="w-full px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+
+        <!-- Logo -->
+        <a href="/index.html" class="font-bold text-lg">SGSITS-MUN</a>
+
+        <!-- Desktop Links -->
+        <div class="hidden md:flex space-x-6 items-center">
+          <a href="/index.html" class="hover:text-[var(--accent-gold)]">Home</a>
+          <a href="/about.html" class="hover:text-[var(--accent-gold)]">About</a>
+
+          <!-- Committees Dropdown -->
+          <div class="relative">
+            <button id="committee-btn" class="hover:text-[var(--accent-gold)] flex items-center focus:outline-none">
+              Committee <span class="ml-1">▾</span>
+            </button>
+            <div id="committee-menu"
+              class="absolute left-0 mt-2 hidden bg-black text-white rounded-md shadow-lg w-44 z-50">
+              <a href="/committee/LokSabha.html"
+                class="block px-4 py-2 hover:bg-[var(--accent-gold)] hover:text-black">Lok Sabha</a>
+              <a href="/committee/Sochum.html"
+                class="block px-4 py-2 hover:bg-[var(--accent-gold)] hover:text-black">SOCHUM</a>
+              <a href="/committee/Disec.html"
+                class="block px-4 py-2 hover:bg-[var(--accent-gold)] hover:text-black">DISEC</a>
+            </div>
+          </div>
+
+          <a href="/newsletters.html" class="hover:text-[var(--accent-gold)]">Newsletters</a>
+          <a href="/contact.html" class="hover:text-[var(--accent-gold)]">Contact</a>
+          <a href="https://www.instagram.com/sgsits_mun" target="_blank" class="hover:text-[var(--accent-gold)]">Follow
+            us</a>
+        </div>
+
+        <!-- Mobile Hamburger -->
+        <div class="md:hidden flex items-center">
+          <button id="menu-btn" class="focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#5936d9] px-4 pb-4 space-y-2">
+      <a href="/index.html" class="block hover:text-[var(--accent-gold)]">Home</a>
+      <a href="/about.html" class="block hover:text-[var(--accent-gold)]">About</a>
+      <div>
+        <p class="font-semibold">Committees</p>
+        <a href="/committee/LokSabha.html" class="block pl-4 hover:text-[var(--accent-gold)]">Lok Sabha</a>
+        <a href="/committee/Sochum.html" class="block pl-4 hover:text-[var(--accent-gold)]">SOCHUM</a>
+        <a href="/committee/Disec.html" class="block pl-4 hover:text-[var(--accent-gold)]">DISEC</a>
+      </div>
+      <a href="/newsletters.html" class="block hover:text-[var(--accent-gold)]">Newsletters</a>
+      <a href="/contact.html" class="block hover:text-[var(--accent-gold)]">Contact</a>
+      <a href="https://www.instagram.com/sgsits_mun" target="_blank"
+        class="block hover:text-[var(--accent-gold)]">Follow us</a>
+    </div>
+  </nav>
+
+
+
+</body>
+<main class="flex-grow mt-16">
+  <!-- Main Content -->
+  <section class="bg-[var(--light-gray)] py-12">
+    <div class="max-w-4xl mx-auto px-4">
+      <h1 class="text-4xl font-bold mb-6 text-center">About SGSITS-MUN</h1>
+      <p class="text-lg mb-4">SGSITS-MUN is the official Model United Nations club of Shri Govindram Seksaria Institute
+        of Technology and Science (SGSITS), Indore. Established with the vision to foster global awareness, diplomacy,
+        and leadership skills among students, SGSITS-MUN has been actively organizing conferences, workshops, and
+        training sessions since its inception.</p>
+      <p class="text-lg mb-4">SGSITS-MUN is the official Model United Nations conference of Shri Govindram Seksaria
+        Institute of Technology and Science (SGSITS), Indore. Established with the vision to foster global awareness,
+        diplomacy, and leadership among students, SGSITS-MUN has been a platform for meaningful debate and dialogue on
+        pressing international issues.
+
+        Through meticulously organized committees, engaging debates, and immersive simulations of UN proceedings,
+        SGSITS-MUN provides participants with the opportunity to develop critical thinking, public speaking, and
+        negotiation skills. Our conference not only encourages deeper understanding of global politics but also inspires
+        delegates to step into the shoes of world leaders and changemakers.
+
+        At SGSITS-MUN, we celebrate diversity, collaboration, and the exchange of ideas. By bringing together passionate
+        students from across the region and beyond, we aim to cultivate future leaders who are prepared to navigate the
+        complexities of an interconnected world.
+
+        Join us in shaping conversations, building perspectives, and creating impact — one debate at a time.</p>
+      <p class="text-lg">Join us in shaping conversations, building perspectives, and creating impact — one debate at a time.</p>
+    </div>
+
+    <div class="max-w-4xl mx-auto px-4">
+      <h1 class="text-4xl font-bold mb-6 text-center">About Theme</h1>
+      <p class="text-lg mb-4">The theme for SGSITS-MUN 2025, "DIGIT : DEMOCRACY,INNOVATION,GLOBAL,INCLUSION,TECHNOLOGY"
+        Digit is our vision where democratic values,innovative ideas,inclusive growth,welfare,and technological progress come together to shape a fairer,progressive,and truly connected world.
+      </p>
+      <p class="text-lg">Think Global, Act Digital</p>
+    </div>
+  </section>
+</main>
+<!-- Footer -->
+<footer class="bg-[var(--dark-charcoal)] text-white text-center p-6">
+  <p>&copy; 2025 SGSITS INDORE | Follow us on
+    <a href="https://www.instagram.com/sgsits_mun?igsh=MTNpYW42NTA1eGtndQ==" target="_blank"
+      class="underline text-[var(--accent-gold)]">Instagram</a>
+  </p>
+  <p class="mt-2 text-sm">Developed by Yashvardhan</p>
+</footer>
+
+<!-- Script for Mobile Menu -->
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+  // Committee dropdown toggle
+  const committeeBtn = document.getElementById('committee-btn');
+  const committeeMenu = document.getElementById('committee-menu');
+
+  committeeBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    committeeMenu.classList.toggle('hidden');
+  });
+
+  document.addEventListener('click', () => {
+    committeeMenu.classList.add('hidden');
+  });
+</script>
+
+</html>

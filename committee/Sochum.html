@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Committee</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary-blue: #5936d9;
+            /* matches college pillars */
+            --secondary-blue: #4A90E2;
+            /* lighter highlight */
+            --accent-gold: #C9A54C;
+            /* from emblem */
+            --neutral-beige: #D9D4C7;
+            /* walls */
+            --light-gray: #F5F5F5;
+            /* section backgrounds */
+            --dark-charcoal: #2C2C2C;
+            /* text/footer */
+        }
+
+        html,
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+    </style>
+</head>
+
+<body class="flex flex-col min-h-screen bg-white text-[var(--dark-charcoal)]">
+
+   <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full z-20 bg-[#5936d9] text-white shadow-lg">
+    <div class="w-full px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+
+        <!-- Logo -->
+        <a href="/index.html" class="font-bold text-lg">SGSITS-MUN</a>
+
+        <!-- Desktop Links -->
+        <div class="hidden md:flex space-x-6 items-center">
+          <a href="/index.html" class="hover:text-[var(--accent-gold)]">Home</a>
+          <a href="/about.html" class="hover:text-[var(--accent-gold)]">About</a>
+
+          <!-- Committees Dropdown -->
+          <div class="relative">
+            <button id="committee-btn" class="hover:text-[var(--accent-gold)] flex items-center focus:outline-none">
+              Committee <span class="ml-1">▾</span>
+            </button>
+            <div id="committee-menu"
+              class="absolute left-0 mt-2 hidden bg-black text-white rounded-md shadow-lg w-44 z-50">
+              <a href="/committee/LokSabha.html"
+                class="block px-4 py-2 hover:bg-[var(--accent-gold)] hover:text-black">Lok Sabha</a>
+              <a href="/committee/Sochum.html"
+                class="block px-4 py-2 hover:bg-[var(--accent-gold)] hover:text-black">SOCHUM</a>
+              <a href="/committee/Disec.html"
+                class="block px-4 py-2 hover:bg-[var(--accent-gold)] hover:text-black">DISEC</a>
+            </div>
+          </div>
+
+          <a href="/newsletters.html" class="hover:text-[var(--accent-gold)]">Newsletters</a>
+          <a href="/contact.html" class="hover:text-[var(--accent-gold)]">Contact</a>
+          <a href="https://www.instagram.com/sgsits_mun" target="_blank"
+            class="hover:text-[var(--accent-gold)]">Follow us</a>
+        </div>
+
+        <!-- Mobile Hamburger -->
+        <div class="md:hidden flex items-center">
+          <button id="menu-btn" class="focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#5936d9] px-4 pb-4 space-y-2">
+      <a href="/index.html" class="block hover:text-[var(--accent-gold)]">Home</a>
+      <a href="/about.html" class="block hover:text-[var(--accent-gold)]">About</a>
+      <div>
+        <p class="font-semibold">Committees</p>
+        <a href="/committee/LokSabha.html" class="block pl-4 hover:text-[var(--accent-gold)]">Lok Sabha</a>
+        <a href="/committee/Sochum.html" class="block pl-4 hover:text-[var(--accent-gold)]">SOCHUM</a>
+        <a href="/committee/Disec.html" class="block pl-4 hover:text-[var(--accent-gold)]">DISEC</a>
+      </div>
+      <a href="/newsletters.html" class="block hover:text-[var(--accent-gold)]">Newsletters</a>
+      <a href="/contact.html" class="block hover:text-[var(--accent-gold)]">Contact</a>
+      <a href="https://www.instagram.com/sgsits_mun" target="_blank"
+        class="block hover:text-[var(--accent-gold)]">Follow us</a>
+    </div>
+  </nav>
+
+
+   <!-- Hero Section -->
+  <section class="pt-24 pb-12 text-center">
+    <img src="/assets/images/Sochumlogo.png" alt="SOCHUM Logo" class="mx-auto w-32 h-32">
+    <h1 class="text-3xl md:text-4xl font-bold mt-6">Social, Humanitarian, and Cultural Committee</h1>
+    <div class="mt-6 flex justify-center space-x-4">
+      <a href="study-guide.pdf" target="_blank"
+        class="px-6 py-2 bg-[var(--dark-charcoal)] text-white font-semibold rounded-lg hover:bg-[var(--accent-gold)] hover:text-black transition">
+        STUDY GUIDE
+      </a>
+      <a href="allotments.pdf" target="_blank"
+        class="px-6 py-2 bg-[var(--dark-charcoal)] text-white font-semibold rounded-lg hover:bg-[var(--accent-gold)] hover:text-black transition">
+        ALLOTMENTS
+      </a>
+    </div>
+  </section>
+
+   <!-- Chairperson Section -->
+  <section class="py-12 px-6 md:px-20">
+    <h2 class="text-2xl font-bold text-center mb-8">Letter from the Chairperson</h2>
+    <div class="md:flex md:space-x-6 items-start">
+      <img src="/assets/images/14final.JPG" alt="Chairperson"
+        class="w-80 h-auto object-cover rounded-lg shadow-lg">
+      <div class="mt-6 md:mt-0">
+        <p class="mb-4">Warmest Greetings Delegates,</p>
+        <p class="mb-4">
+          With ecstatic delight, I am elated to serve as the Chairperson of the Social, Humanitarian, and Cultural Committee, and welcome you all to the third iteration of SGSITS MUN.
+        </p>
+        <p class="mb-4">
+          I started this glamorous MUN journey as a logistics member in 2022. I still remember my bureau from that MUN which made me head over heels for participating in yet another conference.
+        </p>
+        <p class="mb-4">
+          Honestly, I am a pretty compassionate and humble person, someone you can always count on for any kind of support. I am also a huge movie enthusiast which means I will probably spend my weekend staring at my laptop screen, watching the same Bollywood movie for the 10th time.
+        </p>
+        <p class="mt-6 font-semibold">Regards,<br>Shreya Vyas<br>Chairperson<br>Social, Humanitarian, and Cultural Committee</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Committee Description -->
+   <section class="py-12 px-6 md:px-20 bg-[var(--light-gray)]">
+    <h2 class="text-2xl font-bold mb-4 text-green-700">Committee Description</h2>
+    <p>
+      The Social, Humanitarian, and Cultural Committee (SOCHUM) is a principal organ of the United Nations that addresses a wide range of global issues related to human rights, social development, humanitarian affairs, and cultural cooperation. SOCHUM plays a crucial role in promoting international peace and security by focusing on the well-being of individuals and communities worldwide. The committee deliberates on matters such as refugee crises, human trafficking, drug control, and the promotion of fundamental freedoms. It also works to enhance cooperation among member states in addressing social challenges and fostering cultural understanding. SOCHUM's efforts contribute significantly to the UN's mission of creating a more just and equitable world for all.
+    </p>
+  </section>
+
+  <!-- Agenda Description -->
+  <section class="py-12 px-6 md:px-20">
+    <h2 class="text-2xl font-bold mb-4 text-green-700">Agenda Description</h2>
+    <p>
+      "Deliberating upon the Culturally Rooted Conflict in Myanmar and Reviving the Ethnic Rohingya Minority"
+    </p>
+  </section>
+
+</body>
+
+<!-- Footer -->
+  <footer class="bg-[var(--dark-charcoal)] text-white text-center p-6">
+    <p>&copy; 2025 SGSITS INDORE | Follow us on
+      <a href="https://www.instagram.com/sgsits_mun?igsh=MTNpYW42NTA1eGtndQ==" target="_blank"
+        class="underline text-[var(--accent-gold)]">Instagram</a>
+    </p>
+    <p class="mt-2 text-sm">Developed by Yashvardhan</p>
+  </footer>
+
+  <!-- Script for Mobile Menu -->
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+    // Committee dropdown toggle
+    const committeeBtn = document.getElementById('committee-btn');
+    const committeeMenu = document.getElementById('committee-menu');
+
+    committeeBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      committeeMenu.classList.toggle('hidden');
+    });
+
+    document.addEventListener('click', () => {
+      committeeMenu.classList.add('hidden');
+    });
+  </script>
+</html>
