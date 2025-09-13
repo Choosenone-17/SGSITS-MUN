@@ -2,37 +2,31 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Committee</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        :root {
-            --primary-blue: #5936d9;
-            /* matches college pillars */
-            --secondary-blue: #4A90E2;
-            /* lighter highlight */
-            --accent-gold: #C9A54C;
-            /* from emblem */
-            --neutral-beige: #D9D4C7;
-            /* walls */
-            --light-gray: #F5F5F5;
-            /* section backgrounds */
-            --dark-charcoal: #2C2C2C;
-            /* text/footer */
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Committee</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --primary-blue: #5936d9;
+      --secondary-blue: #4A90E2;
+      --accent-gold: #C9A54C;
+      --neutral-beige: #D9D4C7;
+      --light-gray: #F5F5F5;
+      --dark-charcoal: #2C2C2C;
+    }
 
-        html,
-        body {
-            margin: 0 !important;
-            padding: 0 !important;
-        }
-    </style>
+    html,
+    body {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  </style>
 </head>
 
 <body class="flex flex-col min-h-screen bg-white text-[var(--dark-charcoal)]">
 
-   <!-- Navbar -->
+  <!-- Navbar -->
   <nav class="fixed top-0 left-0 w-full z-20 bg-[#5936d9] text-white shadow-lg">
     <div class="w-full px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
@@ -97,12 +91,11 @@
     </div>
   </nav>
 
-
-   <!-- Hero Section -->
+  <!-- Hero Section -->
   <section class="pt-24 pb-12 text-center">
-    <img src="/assets/images/Sochumlogo.png" alt="SOCHUM Logo" class="mx-auto w-32 h-32">
-    <h1 class="text-3xl md:text-4xl font-bold mt-6">Social, Humanitarian, and Cultural Committee</h1>
-    <div class="mt-6 flex justify-center space-x-4">
+    <img src="/assets/images/Sochumlogo.png" alt="SOCHUM Logo" class="mx-auto w-24 h-24 md:w-32 md:h-32">
+    <h1 class="text-2xl md:text-4xl font-bold mt-6">Social, Humanitarian, and Cultural Committee</h1>
+    <div class="mt-6 flex flex-col sm:flex-row justify-center gap-4">
       <a href="study-guide.pdf" target="_blank"
         class="px-6 py-2 bg-[var(--dark-charcoal)] text-white font-semibold rounded-lg hover:bg-[var(--accent-gold)] hover:text-black transition">
         STUDY GUIDE
@@ -114,13 +107,13 @@
     </div>
   </section>
 
-   <!-- Chairperson Section -->
+  <!-- Chairperson Section -->
   <section class="py-12 px-6 md:px-20">
     <h2 class="text-2xl font-bold text-center mb-8">Letter from the Chairperson</h2>
     <div class="md:flex md:space-x-6 items-start">
       <img src="/assets/images/14final.JPG" alt="Chairperson"
-        class="w-80 h-auto object-cover rounded-lg shadow-lg">
-      <div class="mt-6 md:mt-0">
+        class="w-32 h-32 md:w-48 md:h-48 object-cover rounded-lg shadow-lg mx-auto md:mx-0">
+      <div class="mt-6 md:mt-0 text-justify">
         <p class="mb-4">Warmest Greetings Delegates,</p>
         <p class="mb-4">
           With ecstatic delight, I am elated to serve as the Chairperson of the Social, Humanitarian, and Cultural Committee, and welcome you all to the third iteration of SGSITS MUN.
@@ -137,9 +130,9 @@
   </section>
 
   <!-- Committee Description -->
-   <section class="py-12 px-6 md:px-20 bg-[var(--light-gray)]">
+  <section class="py-12 px-6 md:px-20 bg-[var(--light-gray)]">
     <h2 class="text-2xl font-bold mb-4 text-green-700">Committee Description</h2>
-    <p>
+    <p class="text-justify">
       The Social, Humanitarian, and Cultural Committee (SOCHUM) is a principal organ of the United Nations that addresses a wide range of global issues related to human rights, social development, humanitarian affairs, and cultural cooperation. SOCHUM plays a crucial role in promoting international peace and security by focusing on the well-being of individuals and communities worldwide. The committee deliberates on matters such as refugee crises, human trafficking, drug control, and the promotion of fundamental freedoms. It also works to enhance cooperation among member states in addressing social challenges and fostering cultural understanding. SOCHUM's efforts contribute significantly to the UN's mission of creating a more just and equitable world for all.
     </p>
   </section>
@@ -147,14 +140,12 @@
   <!-- Agenda Description -->
   <section class="py-12 px-6 md:px-20">
     <h2 class="text-2xl font-bold mb-4 text-green-700">Agenda Description</h2>
-    <p>
+    <p class="text-justify">
       "Deliberating upon the Culturally Rooted Conflict in Myanmar and Reviving the Ethnic Rohingya Minority"
     </p>
   </section>
 
-</body>
-
-<!-- Footer -->
+  <!-- Footer -->
   <footer class="bg-[var(--dark-charcoal)] text-white text-center p-6">
     <p>&copy; 2025 SGSITS INDORE | Follow us on
       <a href="https://www.instagram.com/sgsits_mun?igsh=MTNpYW42NTA1eGtndQ==" target="_blank"
@@ -170,7 +161,7 @@
     btn.addEventListener('click', () => {
       menu.classList.toggle('hidden');
     });
-    // Committee dropdown toggle
+
     const committeeBtn = document.getElementById('committee-btn');
     const committeeMenu = document.getElementById('committee-menu');
 
@@ -183,4 +174,5 @@
       committeeMenu.classList.add('hidden');
     });
   </script>
+</body>
 </html>

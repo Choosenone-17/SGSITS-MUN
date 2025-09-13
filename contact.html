@@ -2,37 +2,31 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        :root {
-            --primary-blue: #5936d9;
-            /* matches college pillars */
-            --secondary-blue: #4A90E2;
-            /* lighter highlight */
-            --accent-gold: #C9A54C;
-            /* from emblem */
-            --neutral-beige: #D9D4C7;
-            /* walls */
-            --light-gray: #F5F5F5;
-            /* section backgrounds */
-            --dark-charcoal: #2C2C2C;
-            /* text/footer */
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --primary-blue: #5936d9;
+      --secondary-blue: #4A90E2;
+      --accent-gold: #C9A54C;
+      --neutral-beige: #D9D4C7;
+      --light-gray: #F5F5F5;
+      --dark-charcoal: #2C2C2C;
+    }
 
-        html,
-        body {
-            margin: 0 !important;
-            padding: 0 !important;
-        }
-    </style>
+    html,
+    body {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  </style>
 </head>
 
 <body class="flex flex-col min-h-screen bg-white text-[var(--dark-charcoal)]">
 
-   <!-- Navbar -->
+  <!-- Navbar -->
   <nav class="fixed top-0 left-0 w-full z-20 bg-[#5936d9] text-white shadow-lg">
     <div class="w-full px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
@@ -97,35 +91,35 @@
     </div>
   </nav>
 
-
-</body>
-<main class="flex-grow mt-16">
-    <div class="max-w-4xl mx-auto p-6">
-        <h1 class="text-3xl font-bold mb-6">Contact Us</h1>
-        <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-4">
-            <div>
-                <label for="name" class="block text-sm font-medium mb-1">Name</label>
-                <input type="text" id="name" name="name" required
-                    class="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-blue)]">
-            </div>
-            <div>
-                <label for="email" class="block text-sm font-medium mb-1">Email</label>
-                <input type="email" id="email" name="_replyto" required
-                    class="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-blue)]">
-            </div>
-            <div>
-                <label for="message" class="block text-sm font-medium mb-1">Message</label>
-                <textarea id="message" name="message" rows="5" required
-                    class="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-blue)]"></textarea>
-            </div>
-            <button type="submit"
-                class="bg-[var(--primary-blue)] text-white px-4 py-2 rounded-md hover:bg-[var(--secondary-blue)] transition">
-                Send Message
-            </button>
-        </form>
+  <!-- Main Content -->
+  <main class="flex-grow mt-16 px-4 md:px-8 py-8 bg-[var(--light-gray)]">
+    <div class="max-w-3xl mx-auto bg-white shadow-md rounded-lg p-6 md:p-10">
+      <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center">Contact Us</h1>
+      <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-5">
+        <div>
+          <label for="name" class="block text-sm md:text-base font-medium mb-1">Name</label>
+          <input type="text" id="name" name="name" required
+            class="w-full border border-gray-300 rounded-md p-2 md:p-3 focus:outline-none focus:ring-2 focus:ring-[var(--primary-blue)]">
+        </div>
+        <div>
+          <label for="email" class="block text-sm md:text-base font-medium mb-1">Email</label>
+          <input type="email" id="email" name="_replyto" required
+            class="w-full border border-gray-300 rounded-md p-2 md:p-3 focus:outline-none focus:ring-2 focus:ring-[var(--primary-blue)]">
+        </div>
+        <div>
+          <label for="message" class="block text-sm md:text-base font-medium mb-1">Message</label>
+          <textarea id="message" name="message" rows="5" required
+            class="w-full border border-gray-300 rounded-md p-2 md:p-3 focus:outline-none focus:ring-2 focus:ring-[var(--primary-blue)]"></textarea>
+        </div>
+        <button type="submit"
+          class="w-full bg-[var(--primary-blue)] text-white py-2 md:py-3 rounded-md text-lg hover:bg-[var(--secondary-blue)] transition">
+          Send Message
+        </button>
+      </form>
     </div>
-</main>
-<!-- Footer -->
+  </main>
+
+  <!-- Footer -->
   <footer class="bg-[var(--dark-charcoal)] text-white text-center p-6">
     <p>&copy; 2025 SGSITS INDORE | Follow us on
       <a href="https://www.instagram.com/sgsits_mun?igsh=MTNpYW42NTA1eGtndQ==" target="_blank"
@@ -154,4 +148,6 @@
       committeeMenu.classList.add('hidden');
     });
   </script>
+</body>
+
 </html>

@@ -93,9 +93,9 @@
 
   <!-- Hero Section -->
   <section class="pt-24 pb-12 text-center">
-    <img src="/assets/images/Diseclogo.png" alt="DISEC Logo" class="mx-auto w-32 h-32">
-    <h1 class="text-3xl md:text-4xl font-bold mt-6">Disarmament and International Security Committee</h1>
-    <div class="mt-6 flex justify-center space-x-4">
+    <img src="/assets/images/Diseclogo.png" alt="DISEC Logo" class="mx-auto w-24 h-24 md:w-32 md:h-32">
+    <h1 class="text-2xl md:text-4xl font-bold mt-6">Disarmament and International Security Committee</h1>
+    <div class="mt-6 flex flex-col sm:flex-row justify-center gap-4">
       <a href="study-guide.pdf" target="_blank"
         class="px-6 py-2 bg-[var(--dark-charcoal)] text-white font-semibold rounded-lg hover:bg-[var(--accent-gold)] hover:text-black transition">
         STUDY GUIDE
@@ -112,8 +112,8 @@
     <h2 class="text-2xl font-bold text-center mb-8">Letter from the Chairperson</h2>
     <div class="md:flex md:space-x-6 items-start">
       <img src="/assets/images/Nikunj vyas.jpg" alt="Chairperson"
-        class="w-80 h-auto object-cover rounded-lg shadow-lg">
-      <div class="mt-6 md:mt-0">
+        class="w-32 h-32 md:w-48 md:h-48 object-cover rounded-lg shadow-lg mx-auto md:mx-0">
+      <div class="mt-6 md:mt-0 text-justify">
         <p class="mb-4">Warmest Greetings Delegates,</p>
         <p class="mb-4">
           With ecstatic delight, I am elated to serve as the Chairperson of the Disarmament and International Security Committee, and welcome you all to the third iteration of SGSITS MUN.
@@ -133,7 +133,7 @@
   <!-- Committee Description -->
   <section class="py-12 px-6 md:px-20 bg-[var(--light-gray)]">
     <h2 class="text-2xl font-bold mb-4 text-green-700">Committee Description</h2>
-    <p>
+    <p class="text-justify">
       The Disarmament and International Security Committee (DISEC), also known as the First Committee of the United Nations General Assembly, is primarily responsible for addressing issues related to disarmament, global security, and the regulation of armaments. DISEC focuses on promoting international peace and security by discussing matters such as nuclear disarmament, arms control, non-proliferation of weapons of mass destruction
       (WMDs), and the prevention of armed conflicts. The committee plays a crucial role in fostering dialogue among member states, encouraging cooperation on security-related issues, and developing frameworks for reducing the threat of armed violence worldwide.
     </p>
@@ -142,40 +142,39 @@
   <!-- Agenda Description -->
   <section class="py-12 px-6 md:px-20">
     <h2 class="text-2xl font-bold mb-4 text-green-700">Agenda Description</h2>
-    <P>
-      "The Impact of Illicit Arms Transfers on the Israel-Palestine Conflict:Strategies for De-escalation"
-    </P>
+    <p class="text-justify">
+      "The Impact of Illicit Arms Transfers on the Israel-Palestine Conflict: Strategies for De-escalation"
+    </p>
   </section>
 
+  <!-- Footer -->
+  <footer class="bg-[var(--dark-charcoal)] text-white text-center p-6">
+    <p>&copy; 2025 SGSITS INDORE | Follow us on
+      <a href="https://www.instagram.com/sgsits_mun?igsh=MTNpYW42NTA1eGtndQ==" target="_blank"
+        class="underline text-[var(--accent-gold)]">Instagram</a>
+    </p>
+    <p class="mt-2 text-sm">Developed by Yashvardhan</p>
+  </footer>
+
+  <!-- Script for Mobile Menu -->
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+    // Committee dropdown toggle
+    const committeeBtn = document.getElementById('committee-btn');
+    const committeeMenu = document.getElementById('committee-menu');
+
+    committeeBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      committeeMenu.classList.toggle('hidden');
+    });
+
+    document.addEventListener('click', () => {
+      committeeMenu.classList.add('hidden');
+    });
+  </script>
 </body>
-
-<!-- Footer -->
-<footer class="bg-[var(--dark-charcoal)] text-white text-center p-6">
-  <p>&copy; 2025 SGSITS INDORE | Follow us on
-    <a href="https://www.instagram.com/sgsits_mun?igsh=MTNpYW42NTA1eGtndQ==" target="_blank"
-      class="underline text-[var(--accent-gold)]">Instagram</a>
-  </p>
-  <p class="mt-2 text-sm">Developed by Yashvardhan</p>
-</footer>
-
-<!-- Script for Mobile Menu -->
-<script>
-  const btn = document.getElementById('menu-btn');
-  const menu = document.getElementById('mobile-menu');
-  btn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-  });
-  // Committee dropdown toggle
-  const committeeBtn = document.getElementById('committee-btn');
-  const committeeMenu = document.getElementById('committee-menu');
-
-  committeeBtn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    committeeMenu.classList.toggle('hidden');
-  });
-
-  document.addEventListener('click', () => {
-    committeeMenu.classList.add('hidden');
-  });
-</script>
 </html>
