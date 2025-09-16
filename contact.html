@@ -14,6 +14,7 @@
       --neutral-beige: #D9D4C7;
       --light-gray: #F5F5F5;
       --dark-charcoal: #2C2C2C;
+      --green-dark: #14532d;
     }
 
     html,
@@ -31,8 +32,12 @@
     <div class="w-full px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
 
-        <!-- Logo -->
-        <a href="/index.html" class="font-bold text-lg">SGSITS-MUN</a>
+        <!-- Logo + Title -->
+        <a href="/index.html" class="flex items-center space-x-2">
+          <img src="/assets/images/sgsits_logo.png" alt="SGSITS-MUN Logo"
+            class="w-8 h-8 sm:w-10 sm:h-10 rounded-full object-cover">
+          <span class="font-bold text-lg sm:text-xl">SGSITS-MUN</span>
+        </a>
 
         <!-- Desktop Links -->
         <div class="hidden md:flex space-x-6 items-center">
@@ -92,30 +97,41 @@
   </nav>
 
   <!-- Main Content -->
-  <main class="flex-grow mt-16 px-4 md:px-8 py-8 bg-[var(--light-gray)]">
+  <main class="flex-grow mt-20 px-4 md:px-8 py-8 bg-[var(--light-gray)]">
     <div class="max-w-3xl mx-auto bg-white shadow-md rounded-lg p-6 md:p-10">
-      <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center">Contact Us</h1>
-      <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-5">
+      <h1 class="text-3xl md:text-4xl font-bold mb-8 text-[var(--green-dark)] text-center">Secretariat</h1>
+
+      <div class="space-y-6 text-center md:text-left">
         <div>
-          <label for="name" class="block text-sm md:text-base font-medium mb-1">Name</label>
-          <input type="text" id="name" name="name" required
-            class="w-full border border-gray-300 rounded-md p-2 md:p-3 focus:outline-none focus:ring-2 focus:ring-[var(--primary-blue)]">
+          <h2 class="text-xl font-semibold">Secretary General</h2>
+          <p class="text-green-700 break-all">shourya.chouhan.snc9620@shishukunj.in</p>
         </div>
+
         <div>
-          <label for="email" class="block text-sm md:text-base font-medium mb-1">Email</label>
-          <input type="email" id="email" name="_replyto" required
-            class="w-full border border-gray-300 rounded-md p-2 md:p-3 focus:outline-none focus:ring-2 focus:ring-[var(--primary-blue)]">
+          <h2 class="text-xl font-semibold">Director General</h2>
+          <p class="text-green-700 break-all">suyash.jalan.snc165@shishukunj.in</p>
         </div>
+
         <div>
-          <label for="message" class="block text-sm md:text-base font-medium mb-1">Message</label>
-          <textarea id="message" name="message" rows="5" required
-            class="w-full border border-gray-300 rounded-md p-2 md:p-3 focus:outline-none focus:ring-2 focus:ring-[var(--primary-blue)]"></textarea>
+          <h2 class="text-xl font-semibold">USG Delegate Affairs & Public Information</h2>
+          <p class="text-green-700 break-all">saara.ajmera.snc163@shishukunj.in</p>
         </div>
-        <button type="submit"
-          class="w-full bg-[var(--primary-blue)] text-white py-2 md:py-3 rounded-md text-lg hover:bg-[var(--secondary-blue)] transition">
-          Send Message
-        </button>
-      </form>
+
+        <div>
+          <h2 class="text-xl font-semibold">USG - Hospitality and Logistics</h2>
+          <p class="text-green-700 break-all">gauravi.jain.snc9581@shishukunj.in</p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-semibold">USG - Tech Affairs</h2>
+          <p class="text-green-700 break-all">darshan.chhajed.snc10497@shishukunj.in</p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-semibold">USG - Media</h2>
+          <p class="text-green-700 break-all">saanvi.jain.snc10720@shishukunj.in</p>
+        </div>
+      </div>
     </div>
   </main>
 
@@ -135,6 +151,7 @@
     btn.addEventListener('click', () => {
       menu.classList.toggle('hidden');
     });
+
     // Committee dropdown toggle
     const committeeBtn = document.getElementById('committee-btn');
     const committeeMenu = document.getElementById('committee-menu');
@@ -149,5 +166,4 @@
     });
   </script>
 </body>
-
 </html>

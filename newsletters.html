@@ -9,17 +9,11 @@
   <style>
     :root {
       --primary-blue: #5936d9;
-      /* matches college pillars */
       --secondary-blue: #4A90E2;
-      /* lighter highlight */
       --accent-gold: #C9A54C;
-      /* from emblem */
       --neutral-beige: #D9D4C7;
-      /* walls */
       --light-gray: #F5F5F5;
-      /* section backgrounds */
       --dark-charcoal: #2C2C2C;
-      /* text/footer */
     }
 
     html,
@@ -37,8 +31,12 @@
     <div class="w-full px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
 
-        <!-- Logo -->
-        <a href="/index.html" class="font-bold text-lg">SGSITS-MUN</a>
+        <!-- Logo + Title -->
+        <a href="/index.html" class="flex items-center space-x-2">
+          <img src="/assets/images/sgsits_logo.png" alt="SGSITS-MUN Logo"
+            class="w-8 h-8 sm:w-10 sm:h-10 rounded-full object-cover">
+          <span class="font-bold text-lg sm:text-xl">SGSITS-MUN</span>
+        </a>
 
         <!-- Desktop Links -->
         <div class="hidden md:flex space-x-6 items-center">
@@ -97,60 +95,42 @@
     </div>
   </nav>
 
+  <!-- Main Content -->
+  <main class="flex-grow flex items-center justify-center mt-20 px-4 py-16 bg-[var(--light-gray)]">
+    <h1 class="text-3xl md:text-5xl font-bold text-center text-[var(--dark-charcoal)]">
+      📢 Newsletters – Coming Soon
+    </h1>
+  </main>
 
+  <!-- Footer -->
+  <footer class="bg-[var(--dark-charcoal)] text-white text-center p-6">
+    <p>&copy; 2025 SGSITS INDORE | Follow us on
+      <a href="https://www.instagram.com/sgsits_mun?igsh=MTNpYW42NTA1eGtndQ==" target="_blank"
+        class="underline text-[var(--accent-gold)]">Instagram</a>
+    </p>
+    <p class="mt-2 text-sm">Developed by Yashvardhan</p>
+  </footer>
+
+  <!-- Script for Mobile Menu -->
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+
+    // Committee dropdown toggle
+    const committeeBtn = document.getElementById('committee-btn');
+    const committeeMenu = document.getElementById('committee-menu');
+
+    committeeBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      committeeMenu.classList.toggle('hidden');
+    });
+
+    document.addEventListener('click', () => {
+      committeeMenu.classList.add('hidden');
+    });
+  </script>
 </body>
-<main class="flex-grow mt-16 p-6 bg-[var(--light-gray)]">
-  <div class="max-w-5xl mx-auto px-4 md:px-8">
-    <h1 class="text-3xl md:text-4xl font-bold mb-8 text-center">Newsletters</h1>
-    <div class="space-y-6">
-      <div class="bg-white p-4 md:p-6 rounded-lg shadow">
-        <h2 class="text-lg md:text-xl font-semibold mb-2">Newsletter Issue #1 - January 2024</h2>
-        <p class="text-base md:text-lg leading-relaxed mb-3">Highlights from our first issue, including event recaps and upcoming activities.</p>
-        <a href="#" class="text-[var(--accent-gold)] underline">Read More</a>
-      </div>
-      <div class="bg-white p-4 md:p-6 rounded-lg shadow">
-        <h2 class="text-lg md:text-xl font-semibold mb-2">Newsletter Issue #2 - February 2024</h2>
-        <p class="text-base md:text-lg leading-relaxed mb-3">Updates on our latest events and initiatives for the month of February.</p>
-        <a href="#" class="text-[var(--accent-gold)] underline">Read More</a>
-      </div>
-      <div class="bg-white p-4 md:p-6 rounded-lg shadow">
-        <h2 class="text-lg md:text-xl font-semibold mb-2">Newsletter Issue #3 - March 2024</h2>
-        <p class="text-base md:text-lg leading-relaxed mb-3">March highlights, including special features and member spotlights.</p>
-        <a href="#" class="text-[var(--accent-gold)] underline">Read More</a>
-      </div>
-      <!-- Add more newsletter entries as needed -->
-    </div>
-  </div>
-</main>
-
-<!-- Footer -->
-<footer class="bg-[var(--dark-charcoal)] text-white text-center p-6">
-  <p>&copy; 2025 SGSITS INDORE | Follow us on
-    <a href="https://www.instagram.com/sgsits_mun?igsh=MTNpYW42NTA1eGtndQ==" target="_blank"
-      class="underline text-[var(--accent-gold)]">Instagram</a>
-  </p>
-  <p class="mt-2 text-sm">Developed by Yashvardhan</p>
-</footer>
-
-<!-- Script for Mobile Menu -->
-<script>
-  const btn = document.getElementById('menu-btn');
-  const menu = document.getElementById('mobile-menu');
-  btn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-  });
-  // Committee dropdown toggle
-  const committeeBtn = document.getElementById('committee-btn');
-  const committeeMenu = document.getElementById('committee-menu');
-
-  committeeBtn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    committeeMenu.classList.toggle('hidden');
-  });
-
-  document.addEventListener('click', () => {
-    committeeMenu.classList.add('hidden');
-  });
-</script>
-
 </html>
